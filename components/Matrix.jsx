@@ -1,6 +1,6 @@
 import React, {useRef, useLayoutEffect} from 'react'
 import gsap from 'gsap'
-import { Power3 } from 'gsap'
+import { Power1 } from 'gsap'
 
 
 const Matrix = () => {
@@ -12,21 +12,21 @@ const Matrix = () => {
     const matrixLine3 = gsap.utils.selector(matrixRef3)
     const firstLine = "jfhgksjlvsjdklejf583648dchjf   ldkrls^% w"
     const secondLine = "jfhgksjlvsjdklejfw vsdrg的v发生的饭"
-    const thirdLine = "jfhgksjlvsjdklejfw"
+    const thirdLine = "jfhgksjlvsjdklejfw lvsjdklejfw vsdrg的v发生的饭"
 
 
     useLayoutEffect(() => {
-         gsap.set(matrixLine1(".matrix-letter "), {x:-3, margin: "-18px"})
+         gsap.set(matrixLine1(".matrix-letter "), {x:-3, margin: "-20px"})
          gsap.set(matrixLine2('.matrix-letter '), {margin: "-20px"})
          gsap.set(matrixLine3('.matrix-letter '), {margin: "-20px"})
 
-         gsap.to(matrixLine1('.matrix-letter'), {margin: "0px", duration:1.2, ease:Power3.easeInOut })
-         gsap.to(matrixLine2('.matrix-letter'), {margin: "-1px", duration:2, ease:Power3.easeInOut})
-         gsap.to(matrixLine3('.matrix-letter'), {margin: "-2px", duration:1.6, ease:Power3.easeInOut})
+         gsap.to(matrixLine1('.matrix-letter'), {margin: "0px", duration:1.8,transition:".3s ease", ease:Power1.easeInOut })
+         gsap.to(matrixLine2('.matrix-letter'), {margin: "-1px", duration:1.5,transition:".5s ease", ease:Power1.easeInOut})
+         gsap.to(matrixLine3('.matrix-letter'), {margin: "-2px", duration:2,transition:".7s ease", ease:Power1.easeInOut})
 
-         gsap.fromTo(matrixLine1(".matrix-letter"), {y:0, x:0,opacity:0}, {y:-2,x:-4,opacity:1, stagger: .1,repeat:-1, duration: 1.1, ease:Power3.easeInOut} )
-         gsap.fromTo(matrixLine2(".matrix-letter"), {y:0,x: 0, opacity:0}, {y:3, x:-2,stagger: .1,opacity:1, repeat:-1,duration: 1.1, ease:Power3.easeInOut})
-         gsap.fromTo(matrixLine3(".matrix-letter "), {y:0, x:0, opacity:0}, {y:-1,x:-1,opacity:1, stagger: .1,repeat:-1, duration: 1.1,ease:Power3.easeInOut})
+         gsap.fromTo(matrixLine1(".matrix-letter"), {y:0, x:0,opacity:0}, {y:-2,x:-4,opacity:1, stagger: .1,repeat:-1, duration: 1.1, ease:Power1.easeInOut} )
+         gsap.fromTo(matrixLine2(".matrix-letter"), {y:0,x: 0, opacity:0}, {y:3, x:-2,stagger: .1,opacity:1, repeat:-1,duration: 1.1, ease:Power1.easeInOut})
+         gsap.fromTo(matrixLine3(".matrix-letter "), {y:0, x:0, opacity:0}, {y:-1,x:-1,opacity:1, stagger: .1,repeat:-1, duration: 1.1,ease:Power1.easeInOut})
 
 
 

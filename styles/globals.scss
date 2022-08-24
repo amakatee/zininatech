@@ -29,6 +29,7 @@ a {
   width: 100vw;
   min-height: 100vh;
   background-color: $mainblue;
+  overflow: hidden;
 
   background-image: linear-gradient(105deg, #1b2845 20%, #ffffff 50%);
  
@@ -78,7 +79,7 @@ a {
 .matrix {
   position: fixed;
   top: 10vh;
-  left: 3vw;
+  left: 11vw;
   width: 10vw;
   height: 35rem;
   display: flex;
@@ -114,3 +115,17 @@ a {
   }
 }
 /*Matrix End*/
+/*DashBoard start*/
+.dashboard {
+  position: absolute;
+  border-radius: 20px;
+  top: 40vh;
+  left: 12vw;
+  width: 100%;
+  height: 100%;
+  background-color: #1b28456c;
+
+
+  backdrop-filter: blur(.1rem);
+}
+/*DashBoard End */
