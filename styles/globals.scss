@@ -83,7 +83,8 @@ a {
   font-size: .6em;
   text-transform: uppercase;
   letter-spacing: .2px;
-  margin-left: 4rem;
+  margin-left: 3rem;
+  padding-inline-end: 1rem;
 }
 /*Navbar end*/
 
@@ -107,11 +108,12 @@ a {
     align-items: center;
     justify-content: space-around;
     background-color: transparent;
+  
 
     .matrix-letter {
       color: rgb(255, 255, 255);
     
-      font-size: .6rem;
+      font-size: .5rem;
       line-height:1;
       margin: -20px;
       transition: .65s ease-in-out;
@@ -138,6 +140,7 @@ a {
   height: 60vh;
 
   background-color: #1b28456c;
+
 
 
   backdrop-filter: blur(.1rem);
@@ -168,6 +171,8 @@ a {
   }
   .dash-content {
    background-color: #1b2845d2;
+  //  background-image: linear-gradient(270deg, #1b2845c0 80%, #ffffff 150%);
+
    border-radius: 20px;
     width:100%;
     height: 100%;
@@ -175,3 +180,118 @@ a {
   
 }
 /*DashBoard End */
+
+
+.active {
+  background-color: #1b2845;
+    padding: .8em 2em;
+    transition: .2s ease-in-out;
+    border-radius: 20px;
+}
+
+/* shop page start */
+.shopPage {
+  background-color: rgb(255, 255, 255);
+  border: 2px solid #1b28459f;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  transition: .9s ease;
+ 
+   p{
+     margin: 0;
+   }
+  .shop-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   
+   
+    
+    .shop-title {
+      width: 1.1rem;
+      font-size: .7rem;
+      text-transform: uppercase;
+      margin-top: 9rem;
+      letter-spacing: 2px;
+      font-weight: 300;
+      
+      
+      flex: 1;
+      display: flex;
+      transform: rotate(-90deg);
+    
+     
+    
+  
+    }
+    .shop-img {
+      padding-block: 4rem;
+     
+     
+   
+    
+      display: grid;
+      place-content: center;
+ 
+       flex: 4;
+   
+
+
+      img {
+       width: 5rem;
+       background-color: pink;
+  
+      
+    
+        object-fit: cover ;
+      }
+      
+    }
+
+   
+  }
+
+  .shop-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding-inline: 2rem;
+   
+
+    .shop-price {
+      font-size: 1.2rem;
+      letter-spacing: .2px;
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+
+    .shop-product {
+      font-size: .5rem;
+      font-weight: 300;
+      letter-spacing: .3px;
+      line-height: 1;
+      text-transform: lowercase;
+      margin-bottom: 1rem;
+      
+    }
+  }
+  .shop-addToCart {
+    display: block ;
+    background-color: #1b2845;
+    border-radius: 20px;
+    color: white;
+    padding: .8em 2.6em;
+    font-size: .5rem;
+    text-transform: uppercase;
+    border: none;
+    letter-spacing: .3px;
+
+  }
+ 
+
+}
+
+
+/*shop page end */
