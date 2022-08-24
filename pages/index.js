@@ -3,13 +3,12 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Navbar from '../components/Navbar'
 import Matrix from '../components/Matrix'
-import Dashboard from '../components/Dashboard'
+import MainPage from './MainPage'
 export default function Home() {
   return (
     <section className='main'>
-      <Navbar />
-      <Matrix />
-      <Dashboard />
+     
+      <MainPage />
     
      
    

@@ -6,6 +6,10 @@ body {
   font-family: Helvetica Neue, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+ 
+}
 
 a {
   color: inherit;
@@ -23,13 +27,15 @@ a {
   min-height: 8vh;
 
   padding-block: .5rem;
+  overflow: hidden;
 
 }
 .main {
-  width: 100vw;
-  min-height: 100vh;
+  max-width: 100vw;
+  min-height: 120vh;
   background-color: $mainblue;
   overflow: hidden;
+ 
 
   background-image: linear-gradient(105deg, #1b2845 20%, #ffffff 50%);
  
@@ -71,6 +77,13 @@ a {
 
 .nav-navigation  > * {
   color: $mainblue;
+}
+.nav-desc {
+  color: #1b2845;
+  font-size: .6em;
+  text-transform: uppercase;
+  letter-spacing: .2px;
+  margin-left: 4rem;
 }
 /*Navbar end*/
 
@@ -119,13 +132,46 @@ a {
 .dashboard {
   position: absolute;
   border-radius: 20px;
-  top: 40vh;
-  left: 12vw;
-  width: 100%;
-  height: 100%;
+  top: 57vh;
+  left: 10vw;
+  width: 80vw;
+  height: 60vh;
+
   background-color: #1b28456c;
 
 
   backdrop-filter: blur(.1rem);
+  display: flex;
+
+  .dash-nav { 
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 1rem;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .dash-nav > * {
+    color:white;
+    font-size: .5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 350;
+    cursor: pointer;
+
+  }
+  .dash-nav > *:hover {
+    background-color: #1b2845;
+    padding: .8em 2em;
+    transition: .2s ease-in-out;
+    border-radius: 20px;
+
+  }
+  .dash-content {
+   background-color: #1b2845d2;
+   border-radius: 20px;
+    width:100%;
+    height: 100%;
+  }
+  
 }
 /*DashBoard End */

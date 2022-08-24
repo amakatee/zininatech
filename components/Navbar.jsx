@@ -11,7 +11,7 @@ const Navbar = () => {
 
     useLayoutEffect(() => {
         gsap.set(logoLetter(".symbol-letter "), { display:"block"} )
-        gsap.fromTo(logoLetter(".symbol-letter "),{margin:"-100px"}, {margin: "-7px", duration:.5, transition:".7s ease"} )
+        gsap.fromTo(logoLetter(".symbol-letter "),{margin:"-10px"}, {margin: "-7px", duration:.5, transition:".7s ease"} )
         gsap.fromTo(logoRef.current,  {y:0, x:0, }, {y:10, x:50, stagger:.1} )
 
         gsap.fromTo(logoLetter(".symbol-letter "), {y:0, x:0}, {y:10, x:30, stagger:.1,opacity:1} )
@@ -29,6 +29,7 @@ const Navbar = () => {
             <div>About project</div>
             <div>Contact</div>
         </div>
+        <p className='nav-desc'>Create a better user Expirience!</p>
     </div>
   )
 }
