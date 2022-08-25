@@ -25,9 +25,9 @@ const Matrix = () => {
          gsap.set(matrixLine3('.matrix-letter '), {margin: "-20px"})
          gsap.set(matrixLine4('.matrix-letter '), {margin: "-20px"})
 
-         gsap.to(matrixLine1('.matrix-letter'), {margin: "0px", duration:1,transition:".3s easeInOut", ease:Power1.easeInOut })
-         gsap.to(matrixLine2('.matrix-letter'), {margin: "-1px", duration:.8,transition:".5s easeInOut", ease:Power1.easeInOut})
-         gsap.to(matrixLine3('.matrix-letter'), {margin: "-2px", duration:1.8,transition:".7s easeInOut", ease:Power1.easeInOut})
+         gsap.to(matrixLine1('.matrix-letter'), {margin: "0px", duration:1.1})
+         gsap.to(matrixLine2('.matrix-letter'), {margin: "-1px", duration:.9})
+         gsap.to(matrixLine3('.matrix-letter'), {margin: "-2px", duration:1.8})
          gsap.to(matrixLine4('.matrix-letter'), {margin: "-1px", duration:1.4})
 
          gsap.fromTo(matrixLine1(".matrix-letter"), {y:0, x:0,opacity:0}, {y:-2,x:-4,opacity:1, stagger: .1,repeat:-1, duration: 1.1, ease:Power1.easeInOut} )
