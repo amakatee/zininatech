@@ -35,6 +35,7 @@ a {
   min-height: 120vh;
   background-color: $mainblue;
   overflow: hidden;
+  z-index: 1;
  
 
   background-image: linear-gradient(105deg, #1b2845 20%, #ffffff 50%);
@@ -112,7 +113,13 @@ a {
   height: 35rem;
   display: flex;
   gap: 1px;
+
   align-items: center;
+
+ 
+ 
+
+padding: .1rem;
 
 
   .matrix-div {
@@ -121,7 +128,10 @@ a {
     gap: 1px;
     align-items: center;
     justify-content: space-around;
-    background-color: transparent;
+    
+
+    // padding: .1rem;
+    
     
   
 
@@ -131,13 +141,13 @@ a {
       font-size: .5rem;
       line-height:1;
       margin: -20px;
-      transition: .65s ease-in-out;
+
       transition: 2s ease-in-out;
       text-shadow: 0 0 5px rgb(0, 110, 255), 
       0 0 28px rgba(4, 255, 201, 0.212),
-      0 7px 18px rgb(56, 255, 30), 
-      0 7px 12px rgb(38, 255, 10), 
-      0 5px 13px rgb(3, 28, 167),
+      0 7px 18px rgb(48, 255, 21), 
+      0 7px 12px rgb(31, 238, 3), 
+      0 5px 13px rgb(28, 40, 107),
   
   
      }
@@ -279,6 +289,7 @@ a {
     }
     .shop-img {
       padding-block: 3.5rem;
+      overflow: hidden;
      
      
    
@@ -437,3 +448,14 @@ a {
 }
 
 /*shop page end */
+
+/*second Section Start*/
+.second-section {
+  width: 100vw;
+  min-height: 100vh;
+  z-index: 4;
+  position: absolute;
+  background-color: pink;
+}
+
+/*second section End*/

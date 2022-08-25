@@ -3,15 +3,20 @@ import DashboardLayout from './DashboardLayout'
 import gsap from 'gsap'
 
 const Shop = () => {
+
   const [shoppingCart, setShoppingCart] = useState([])
   const [cartActive, setCartActive] = useState(false)
   const [quant, setQuant] = useState(1)
+  const imgRef = useRef()
 
   const shoppingCartRef = useRef()
 
   useEffect(() => {
     
     gsap.fromTo(shoppingCartRef.current, {y:-100} , {y: 0})
+    gsap.set(imgRef.current, {y:-10, x: 10})
+   
+    gsap.fromTo(imgRef.current, { y:-10, x: 10,  transform: 'scale(1)'} , {y:30, x:-10,transition:'2s ease', transform: 'scale(1.5)', delay :.5, })
 
   }, [])
 
@@ -49,7 +54,7 @@ const Shop = () => {
          <p className='shop-title'>{b.name}</p>
         
           <div className='shop-img'>
-            <img src='assets/rose.png' alt=""></img>
+            <img ref={imgRef} src='assets/rose.png' alt=""></img>
           </div>
   
         </div>
