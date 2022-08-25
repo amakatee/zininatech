@@ -35,7 +35,7 @@ const Navbar = () => {
             <span key={i} className="symbol-letter">{letter}</span>
         ))}</h1>
         <div  className='nav-navigation'>
-            <div className='nav-item'><span ref={navItemRef} >Now</span></div>
+            <div className='nav-item invisible'><span ref={navItemRef} >Now</span></div>
             <div className='nav-item'><span ref={navItemRef2}>About project</span></div>
             <div className='nav-item'><span ref={navItemRef3}>Contact</span></div>
         </div>
