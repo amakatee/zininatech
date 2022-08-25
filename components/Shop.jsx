@@ -49,7 +49,7 @@ const Shop = () => {
          <p className='shop-title'>{b.name}</p>
         
           <div className='shop-img'>
-            <img src='assets/book.jpeg' alt=""></img>
+            <img src='assets/rose.png' alt=""></img>
           </div>
   
         </div>
@@ -81,7 +81,7 @@ const Shop = () => {
        {shoppingCart.map(c => (
           <div key={c.id} className='cart-product'>
           <div className='cart-prod-img'>
-            <img width={50} src='./assets/book.jpeg'></img>
+            <img width={50} src='./assets/rose.png'></img>
           </div>
           <div className='cart-prod-desc'>
             <p>Name: <span className='span-el'>{c.name}</span> </p>
