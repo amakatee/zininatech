@@ -43,7 +43,7 @@ const Shop = () => {
         </svg> <p className='small-text'>({shoppingCart.length})</p>
       </div>
       {books.map(b => (
-        <>
+        <div key={b.id}>
          <div className='shop-main'>
         
          <p className='shop-title'>{b.name}</p>
@@ -58,7 +58,7 @@ const Shop = () => {
           <p className='shop-product'>  ствованиязахватывающего и интересного повествованиязахватывающего и интересного повествования</p>
           <button onClick={(e) => addToCart(e, b)} className='shop-addToCart'>Add to Cart</button>
         </div>
-        </>
+        </div>
 
       ))}
    
@@ -69,7 +69,7 @@ const Shop = () => {
      <div  ref={shoppingCartRef} className='shopping-cart'>
      <div className='cart-header'>
        <div className='header-cart'>
-     <svg   className="svg"  onClick={() => setCartActive(false)} stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24" height="12" width="12" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke="#000" strokeWidth="2" d="M3,3 L21,21 M3,21 L21,3"></path></svg>
+     <svg   className="svg"  onClick={() => setCartActive(false)} stroke="#1b2845" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24" height="12" width="12" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke="#1b2845" strokeWidth="2" d="M3,3 L21,21 M3,21 L21,3"></path></svg>
      </div>
      <p>В корзине</p>
      <div className='header-cart'>
@@ -79,7 +79,7 @@ const Shop = () => {
      </div>
      <div className='cart-container'>
        {shoppingCart.map(c => (
-          <div className='cart-product'>
+          <div key={c.id} className='cart-product'>
           <div className='cart-prod-img'>
             <img width={50} src='./assets/book.jpeg'></img>
           </div>

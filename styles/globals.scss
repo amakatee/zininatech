@@ -309,7 +309,7 @@ a {
    
 
     .shop-price {
-      font-size: 1.2rem;
+      font-size: 1rem;
       letter-spacing: .2px;
       font-weight: 500;
       margin-bottom: 1rem;
@@ -331,12 +331,15 @@ a {
     background-color: #1b2845;
     border-radius: 20px;
     color: white;
-    padding: .8em 2.6em;
+    padding: 1.1em 2.6em;
     font-size: .5rem;
     text-transform: uppercase;
     border: none;
     letter-spacing: .3px;
 
+  }
+  .shop-addToCart:hover {
+    transform: scale(1.05);
   }
  
 
@@ -356,6 +359,7 @@ a {
   padding-inline: 1rem;
   display: flex;
   flex-direction: column;
+  color: #1b2845;
 
 
 
@@ -412,6 +416,7 @@ a {
       font-size: .4rem;
       text-transform:capitalize;
       color: rgb(58, 58, 58);
+      color: #1b2845;
 
 
     }
