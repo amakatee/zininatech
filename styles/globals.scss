@@ -458,12 +458,16 @@ padding: .1rem;
  
   background-image: linear-gradient(360deg, #1b2845 55%, #ffffff00 100%);
   backdrop-filter: blur(.1rem);
-display: flex;
+  display: grid;
+  place-content: center;
+
+.second-cont {
+  display: flex;
 flex-direction: column;
 align-items: center;
 gap: 1rem;
-margin: 0;
-
+margin: 0; 
+}
 .second-title {
   font-size: 1.3rem;
   font-weight: 700;

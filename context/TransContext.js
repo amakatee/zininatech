@@ -31,8 +31,8 @@ export const TransContext = ({children}) => {
           const tlMain = gsap.timeline({
             scrollTrigger: {
               trigger: entry.target,
-              markers: {startColor: "green", endColor: "blue"},
-              start: '0%',
+            
+              start: '17%',
               end: '100%',
               pin:true,
               pinSpacing: false,
@@ -40,23 +40,44 @@ export const TransContext = ({children}) => {
             }
           })
          /* Navbar */
-         tlMain.set(logoLetter(".symbol-letter "), { display:"block"} )
-         tlMain.set(navItemRef.current, {opacity: '0'})
-         tlMain.to(logoLetter(".symbol-letter "), {margin: "-7px", transition:".9s ease"} )
-         tlMain.fromTo(logoRef.current,  {y:0, x:0, }, {y:10, x:50, stagger:.1} )
+        //  tlMain.set(logoLetter(".symbol-letter "), { display:"block"} )
+        //  tlMain.set(navItemRef.current, {opacity: '0'})
+        //  tlMain.to(logoLetter(".symbol-letter "), {margin: "-7px", transition:".9s ease"} )
+        //  tlMain.fromTo(logoRef.current,  {y:0, x:0, }, {y:10, x:50, stagger:.1} )
 
-         tlMain.fromTo(logoLetter(".symbol-letter "), {y:0, x:0}, {y:10, x:30, stagger:.1,opacity:1, duaration: .3,transition:'1s ease'} )
+        //  tlMain.fromTo(logoLetter(".symbol-letter "), {y:0, x:0}, {y:10, x:30, stagger:.1,opacity:1, duaration: .3,transition:'1s ease'} )
 
-         tlMain.fromTo(navItemRef.current, {x: -100, opacity:0} , {x:0, opacity:1, duration:.5, transition:'1s ease'})
+        //  tlMain.fromTo(navItemRef.current, {x: -100, opacity:0} , {x:0, opacity:1, duration:.5, transition:'1s ease'})
 
          /* NavbarEnd */
+           
+         const tlIntro = gsap.timeline({
+          scrollTrigger: {
+            trigger: entry.target,
+          
+            start: '0%',
+            end: '5%',
          
+  
+          }
+        
 
+         })
+         tlIntro.set(logoLetter(".symbol-letter "), { display:"block"} )
+         tlIntro.set(navItemRef.current, {opacity: '0'})
+         tlIntro.to(logoLetter(".symbol-letter "), {margin: "-7px", transition:".9s ease"} )
+         tlIntro.fromTo(logoRef.current,  {y:0, x:0, }, {y:10, x:50, stagger:.1} )
+         tlIntro.fromTo(logoLetter(".symbol-letter "), {y:0, x:0}, {y:10, x:30, stagger:.1,opacity:1, duaration: .3,transition:'1s ease'} )
+         tlIntro.fromTo(navItemRef.current, {x: -100, opacity:0} , {x:0, opacity:1, duration:.5, transition:'1s ease'})
 
         }
+
+       
     
     
       }, [firstPageVis])
+
+    
 
     return (
         <TransitionContext.Provider
