@@ -32,7 +32,7 @@ export const TransContext = ({children}) => {
             scrollTrigger: {
               trigger: entry.target,
             
-              start: '17%',
+              start: '23%',
               end: '100%',
               pin:true,
               pinSpacing: false,
