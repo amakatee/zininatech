@@ -455,7 +455,63 @@ padding: .1rem;
   min-height: 100vh;
   z-index: 4;
   position: absolute;
-  background-color: pink;
+ 
+  background-image: linear-gradient(360deg, #1b2845 55%, #ffffff00 100%);
+  backdrop-filter: blur(.1rem);
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 1rem;
+margin: 0;
+
+.second-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #1b2845;
+}
+
+.topic-cont {
+ 
+  width: 80vw;
+  margin-inline: auto;
+  aspect-ratio: 1/.4;
+  text-align: start;
+  padding: .3em 1em;
+
+  .topic-title {
+    color: white;
+    margin-bottom: 0.5rem;
+    line-height: 1.1rem;
+    text-transform: uppercase;
+    font-size: .7rem;
+    letter-spacing: 1px;
+    font-weight: 400;
+   
+  .topic-span {
+    font-weight: 700;
+    text-shadow: 0 0 5px rgb(0, 110, 255), 
+    0 0 18px rgba(4, 255, 201, 0.212),
+    0 1px 14px rgb(48, 255, 21), 
+    0 1px 12px rgb(31, 238, 3), 
+    0 1px 10px rgb(28, 40, 107),
+
+
+   
+  }
+
+  }
+
+  .topic-desc {
+    font-size: .65rem;
+    letter-spacing: .7px;
+    font-weight: 300;
+    color: #f3f0f0;
+    
+    
+  }
+}
 }
 
 /*second section End*/
