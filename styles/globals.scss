@@ -323,6 +323,7 @@ padding: .1rem;
   .shop-desc {
     display: flex;
     flex-direction: column;
+    
     align-items: flex-end;
     justify-content: center;
     padding-inline: 2rem;
@@ -467,6 +468,7 @@ padding: .1rem;
 
 .second-cont {
   display: flex;
+  flex-wrap: wrap;
 flex-direction: column;
 align-items: center;
 gap: 1rem;
@@ -478,6 +480,7 @@ margin: 0;
   text-transform: uppercase;
   letter-spacing: 1.5px;
   color: #f8f8f8;
+  
 }
 
 .topic-cont {
