@@ -30,12 +30,12 @@ const SecondSection = () => {
           </video>
         </div> */}
         <div className='contact'>
-          <h4> Leave your Email</h4>
+          <h4 className='contact-title'> Leave your Email</h4>
           <form className='form'>
           <input />
           <button>Submit</button>
           </form>
-          <p>or contact me in telegram</p>
+          <p className='contact-tel'>or contact me in telegram</p>
 
 
         </div>

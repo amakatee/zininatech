@@ -572,3 +572,68 @@ bottom: 0;
   align-items: center;
   gap: 3rem;
 }
+.contact {
+  color: white;
+
+  .contact-title {
+    font-size: .7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #f8f8f8;
+    margin-bottom: 1rem;
+
+  }
+  .form {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-bottom: .8rem;
+
+    input {
+      background-color: transparent;
+      border: none;
+      outline: none;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      padding: .6em 1.7em;
+      box-shadow: 0 0 5px rgb(0, 110, 255), 
+      0 0 18px rgba(4, 255, 201, 0.212),
+      0 1px 6px rgb(48, 255, 21), 
+      0 1px 5px rgb(31, 238, 3), 
+      0 1px 6px rgb(28, 40, 107),;
+      color: white;
+      font-size: 1rem;
+    }
+
+    button {
+
+      border: none;
+      background-color: transparent;
+      
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: #f8f8f8;
+     
+      text-shadow: 0 0 5px rgb(0, 110, 255), 
+      0 0 18px rgba(4, 255, 201, 0.212),
+      0 1px 14px rgb(48, 255, 21), 
+      0 1px 12px rgb(31, 238, 3), 
+      0 1px 10px rgb(28, 40, 107),
+
+    }
+  }
+
+  .contact-tel {
+    color: white;
+    margin-bottom: 0.5rem;
+    line-height: 1.1rem;
+    text-transform: uppercase;
+    font-size: 0.4rem;
+    letter-spacing: 1px;
+    font-weight: 400;
+  }
+
+}
