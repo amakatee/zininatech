@@ -2,7 +2,15 @@ import React from 'react'
 
 const ThirdSection = () => {
   return (
-    <div>ThirdSection</div>
+    <div className='contact-video'>
+        <video className='vid' width={500}  loop={true} muted={true} autoPlay={true} playsInline controls={false} >
+            <source
+            src='assets/water.mp4'
+            type='video/mp4'
+            >
+            </source>
+          </video>
+        </div>
   )
 }
 

@@ -2,6 +2,7 @@ import React from 'react'
 
 const SecondSection = () => {
   return (
+    
     <div className='second-section'>
       <div className='second-cont'>
         <h1 className='second-title'>Abour</h1>
@@ -18,6 +19,15 @@ const SecondSection = () => {
         <p className='topic-desc'>Next js !bfjshdkfsjhdkj </p>
         </div>
         </div>
+        {/* <div className='contact-video'>
+        <video  loop={true} muted={true} autoPlay={true} playsInline controls={false} >
+            <source
+            src='assets/water.mp4'
+            type='video/mp4'
+            >
+            </source>
+          </video>
+        </div> */}
     </div>
   )
 }
