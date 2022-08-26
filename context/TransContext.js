@@ -52,40 +52,9 @@ export const TransContext = ({children}) => {
           })
 
 
-          /*Matrix */
-
-         
-          /* Mftrix Ends */
-         /* Navbar */
-        //  tlMain.set(logoLetter(".symbol-letter "), { display:"block"} )
-        //  tlMain.set(navItemRef.current, {opacity: '0'})
-        //  tlMain.to(logoLetter(".symbol-letter "), {margin: "-7px", transition:".9s ease"} )
-        //  tlMain.fromTo(logoRef.current,  {y:0, x:0, }, {y:10, x:50, stagger:.1} )
-
-        //  tlMain.fromTo(logoLetter(".symbol-letter "), {y:0, x:0}, {y:10, x:30, stagger:.1,opacity:1, duaration: .3,transition:'1s ease'} )
-
-        //  tlMain.fromTo(navItemRef.current, {x: -100, opacity:0} , {x:0, opacity:1, duration:.5, transition:'1s ease'})
-
-         /* NavbarEnd */
-           
-        //  const tlIntro = gsap.timeline({
-        //   scrollTrigger: {
-        //     trigger: entry.target,
-          
-        //     start: '0%',
-        //     end: '5%',
-         
-  
-        //   }
-        
-
-        //  })
-        //  tlIntro.set(logoLetter(".symbol-letter "), { display:"block"} )
-        //  tlIntro.set(navItemRef.current, {opacity: '0'})
-        //  tlIntro.to(logoLetter(".symbol-letter "), {margin: "-7px", transition:".9s ease"} )
-        //  tlIntro.fromTo(logoRef.current,  {y:0, x:0, }, {y:10, x:50, stagger:.1} )
-        //  tlIntro.fromTo(logoLetter(".symbol-letter "), {y:0, x:0}, {y:10, x:30, stagger:.1,opacity:1, duaration: .3,transition:'1s ease'} )
-        //  tlIntro.fromTo(navItemRef.current, {x: -100, opacity:0} , {x:0, opacity:1, duration:.5, transition:'1s ease'})
+       
+      
+       
 
         }
 
@@ -93,16 +62,25 @@ export const TransContext = ({children}) => {
     
     
       }, [firstPageVis])
+
+      useLayoutEffect(() => 
+      {
+        gsap.fromTo(navItemRef.current, {x: -100, opacity:0} , {x:0, opacity:1, duration:.5, transition:'1s easeInOut', delay:.8})
+
+
+      }, [])
    useLayoutEffect(() => {
+
+    /* Matrix */
          gsap.set(matrixLine1(".matrix-letter "), {x:-3, margin: "-20px"})
          gsap.set(matrixLine2('.matrix-letter '), {margin: "-20px"})
          gsap.set(matrixLine3('.matrix-letter '), {margin: "-20px"})
          gsap.set(matrixLine4('.matrix-letter '), {margin: "-20px"})
 
-         gsap.to(matrixLine1('.matrix-letter'), {margin: "0px", duration:1.1,  ease: Power3.easeInOut})
-         gsap.to(matrixLine2('.matrix-letter'), {margin: "-1px", duration:.9,  ease: Power3.easeInOut})
-         gsap.to(matrixLine3('.matrix-letter'), {margin: "-2px", duration:1.8, ease: Power3.easeInOut})
-         gsap.to(matrixLine4('.matrix-letter'), {margin: "-1px", duration:1.4, ease: slowMo})
+         gsap.fromTo(matrixLine1('.matrix-letter'), {margin: "-20px"}, {margin: "0px", duration:1.2,  ease: Power3.easeInOut, delay:.3})
+         gsap.fromTo(matrixLine2('.matrix-letter'), {margin: "-20px"}, {margin: "-1px", duration:1.3,  ease: Power3.easeInOut, delay:.3})
+         gsap.fromTo(matrixLine3('.matrix-letter'),{margin: "-20px"}, {margin: "-2px", duration:1.9, ease: Power3.easeInOut, delay:.3})
+         gsap.fromTo(matrixLine4('.matrix-letter'),{margin: "-20px"}, {margin: "-1px", duration:1.4, ease: Power3.easeInOut, delay:.3})
 
          gsap.fromTo(matrixLine1(".matrix-letter"), {y:0, x:0,opacity:0}, {y:-2,x:-4,opacity:1, stagger: .1,repeat:-1, duration: 1.1} )
          gsap.fromTo(matrixLine2(".matrix-letter"), {y:0,x: 0, opacity:0}, {y:3, x:-2,stagger: .1,opacity:1, repeat:-1,duration: 1.1})
@@ -111,7 +89,7 @@ export const TransContext = ({children}) => {
 
 
 
-
+    /* Matrix End */
 
     }, [])
     
