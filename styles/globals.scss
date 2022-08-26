@@ -602,18 +602,16 @@ bottom: 0;
 
     input {
       background-color: transparent;
-      border: none;
+      border: 1px solid white;
       outline: none;
-      border-top-left-radius: 20px;
+      border-radius: 20px;
       border-bottom-right-radius: 20px;
       padding: .6em 1.2em;
-      box-shadow: 0 0 5px rgb(0, 110, 255), 
-      0 0 18px rgba(4, 255, 201, 0.212),
-      0 1px 6px rgb(48, 255, 21), 
-      0 1px 5px rgb(31, 238, 3), 
-      0 1px 6px rgb(28, 40, 107),;
+     
       color: white;
       font-size: 1rem;
+     
+     
     }
 
     button {
@@ -626,7 +624,8 @@ bottom: 0;
       text-transform: uppercase;
       letter-spacing: 1.5px;
       color: #f8f8f8;
-      padding: .3rem .8rem;
+      padding: 1rem 1rem;
+      
      
       text-shadow: 0 0 5px rgb(0, 110, 255), 
       0 0 18px rgba(4, 255, 201, 0.212),
