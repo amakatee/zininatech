@@ -52,7 +52,7 @@ export const TransContext = ({children}) => {
             }
           })
           console.log(dashBoardRef.current)
-          tlMain.to(dashBoardRef.current, {y:'-30%',transition:'7s easeInOut' ,ease:slowMo})
+          tlMain.fromTo(dashBoardRef.current,{y:0}, {y:'-30%',transition:'7s easeInOut' ,ease:slowMo})
           
 
 
