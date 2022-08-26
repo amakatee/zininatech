@@ -1,8 +1,11 @@
-import React, {useState, useRef, useEffect} from 'react'
+import React, {useState, useRef, useEffect, useContext} from 'react'
+import TransitionContext from '../context/TransContext'
 import Shop from './Shop'
 
 
+
 const DashboardLayout = ({children}) => {
+  const {dashBoardRef} = useContext(TransitionContext)
   const [status, setStatus] = useState("Shop")
   const [el, setEl] = useState()
   const landingRef =useRef()
@@ -54,7 +57,7 @@ const DashboardLayout = ({children}) => {
 
   
   return (
-    <div className='dashboard'>
+    <div ref={dashBoardRef} className='dashboard'>
         <div className='dash-nav'>
         
             <div ref={shopRef} data-status="Shop" onClick={(e) => handleNav(e)}>Shop</div>

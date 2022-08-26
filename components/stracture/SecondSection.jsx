@@ -4,6 +4,7 @@ const SecondSection = () => {
   return (
     
     <div className='second-section'>
+      <div className='column'>
       <div className='second-cont'>
         <h1 className='second-title'>Abour</h1>
         <div className='topic-cont'>
@@ -28,6 +29,18 @@ const SecondSection = () => {
             </source>
           </video>
         </div> */}
+        <div className='contact'>
+          <h4> Leave your Email</h4>
+          <form className='form'>
+          <input />
+          <button>Submit</button>
+          </form>
+          <p>or contact me in telegram</p>
+
+
+        </div>
+
+    </div>
     </div>
   )
 }

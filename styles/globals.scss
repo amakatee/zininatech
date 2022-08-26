@@ -457,7 +457,7 @@ padding: .1rem;
 /*second Section Start*/
 .second-section {
   width: 100vw;
-  min-height: 100vh;
+  min-height: 120vh;
   z-index: 4;
   position: absolute;
  
@@ -480,6 +480,7 @@ margin: 0;
   text-transform: uppercase;
   letter-spacing: 1.5px;
   color: #f8f8f8;
+  margin-bottom: 1rem;
   
 }
 
@@ -563,4 +564,11 @@ bottom: 0;
  height: 100%;
  object-fit: cover;
   
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
 }
