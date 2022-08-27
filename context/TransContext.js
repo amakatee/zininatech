@@ -41,7 +41,11 @@ export const TransContext = ({children}) => {
 
   const secondTitleRef = useRef()
   const secTitle = gsap.utils.selector(secondTitleRef)
+  const secTopRef1 = useRef()
+  const secTopRef2 = useRef()
+  const secTopRef3  = useRef()
   /* Second page title ends  */
+  console.log(seconPageVis)
 
 
 
@@ -99,16 +103,28 @@ export const TransContext = ({children}) => {
       useLayoutEffect(() => {
         if(seconPageVis){
           const tlSecond = gsap.timeline({
-            trigger:entrySecond.target,
-            start:'0%',
-            end: '1000%',
-            scrub:true,
+            scrollTrigger: {
+              trigger: entry.target,
+            
+              start: '30%',
 
+              scrub:true,
+              end: '90%',
+             
+    
+            }
 
           })
-          tlSecond.fromTo(secTitle('.second-title-letter') , {y:-100}  , {y:0})
-          console.log(secTitle('.second-title-letter'))
+          tlSecond.fromTo(secondTitleRef.current , {y:'100%',  }  , {y:0,opacity:1})
+          tlSecond.fromTo(secTitle('.second-title-letter'), {y:'0', x:'0%'}, {y:'100%', x:'30%', stagger:.1, ease:slowMo})
+          tlSecond.fromTo(secTopRef1.current, {y:'8%', opacity:0, transform:'scale(0.9)'}, {y:'0%', opacity:1,transform:'scale(1)', delay: .1})
+          tlSecond.fromTo(secTopRef2.current, {y:'8%', opacity:0, transform:'scale(0.9)'}, {y:'0%', opacity:1,transform:'scale(1)', delay: .1})
+          tlSecond.fromTo(secTopRef3.current, {y:'8%', opacity:0, transform:'scale(0.9)'}, {y:'0%', opacity:1,transform:'scale(1)', delay: .1})
+
+         
+         
         }
+        
       
 
       }, [seconPageVis])
@@ -189,7 +205,11 @@ export const TransContext = ({children}) => {
             matrixLine3, 
             matrixLine4,
             dashBoardRef,
-            secondTitleRef
+            secondTitleRef,
+            secondPageRef,
+            secTopRef1,
+            secTopRef2, 
+            secTopRef3
    
         }}
         >
