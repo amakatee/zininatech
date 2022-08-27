@@ -36,11 +36,12 @@ const Navbar = () => {
             <span key={i} className="symbol-letter">{letter}</span>
         ))}</h1>
         <div  className='nav-navigation'>
-            <div className='nav-item invisible'><span ref={navItemRef} >Now</span></div>
-            <div className='nav-item'><span ref={navItemRef2}>About project</span></div>
-            <div className='nav-item'><span ref={navItemRef3}>Contact</span></div>
+            <div className='nav-item invisible'><span ref={navItemRef} >Cайт</span></div>
+            <div className='nav-item'><span ref={navItemRef2}>Обо мне</span></div>
+            <div className='nav-item'><span ref={navItemRef3}>Контакты</span></div>
         </div>
-        <p className='nav-desc'>Create a better user Expirience!</p>
+        <p className='nav-desc'>Итерация свойственна человеку, рекурсия божественна. <br />
+             <span >— L.P. Deutsch</span> </p>
     </div>
   )
 }

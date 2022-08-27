@@ -23,7 +23,7 @@ const Shop = () => {
   const books = [
     {
       id:'1',
-      name:'Максуэлл Мольц: Психокибернетика',
+      name:'Морская глубина',
       price:'819'
 
     }
@@ -60,8 +60,8 @@ const Shop = () => {
         </div>
         <div className='shop-desc'>
           <p className='shop-price'>{b.price} ₽</p>
-          <p className='shop-product'>  ствованиязахватывающего и интересного повествованиязахватывающего и интересного повествования</p>
-          <button onClick={(e) => addToCart(e, b)} className='shop-addToCart'>Add to Cart</button>
+          <p className='shop-product'> Синяя роза. Высота - 60 см. Диаметр -  30-35 см</p>
+          <button onClick={(e) => addToCart(e, b)} className='shop-addToCart'>В корзину</button>
         </div>
         </div>
 
@@ -89,9 +89,9 @@ const Shop = () => {
             <img width={50} src='./assets/rose.png'></img>
           </div>
           <div className='cart-prod-desc'>
-            <p>Name: <span className='span-el'>{c.name}</span> </p>
-            <p>Price: <span className='span-el'>{c.price} ₽</span> </p>
-            <p>amount:  <span className='span-el'>{quant}</span>  </p>
+            <p><span className='span-el'>{c.name}</span> </p>
+            <p>Цена: <span className='span-el'>{c.price} ₽</span> </p>
+            <p>Кол-во:  <span className='span-el'>{quant}</span>  </p>
           </div>
  
         </div>

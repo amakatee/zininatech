@@ -20,7 +20,7 @@ const DashboardLayout = ({children}) => {
 
   const shopPage = <Shop />
 
-  const landingPage = <div>landing</div>
+  const landingPage = <div className='landing-page'> <p>Здесь возможно что-нибудь будет:)</p></div>
 
   function currentDash ( status = currentStatus) {
 
@@ -60,10 +60,10 @@ const DashboardLayout = ({children}) => {
     <div ref={dashBoardRef} className='dashboard'>
         <div className='dash-nav'>
         
-            <div ref={shopRef} data-status="Shop" onClick={(e) => handleNav(e)}>Shop</div>
+            <div ref={shopRef} data-status="Shop" onClick={(e) => handleNav(e)}>Магазин</div>
          
-            <div ref={landingRef} data-status="Landing" onClick={(e) => handleNav(e)}>Landing</div>
-            <div>ETC</div>
+            <div ref={landingRef} data-status="Landing" onClick={(e) => handleNav(e)}>Лендинг</div>
+            <div>и другое</div>
          
         </div>
         <div className='dash-content'>

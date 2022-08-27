@@ -7,10 +7,10 @@ import TransitionContext from '../context/TransContext'
 const Matrix = () => {
     const {matrixRef1, matrixRef2, matrixRef3, matrixRef4 , matrixLine1, matrixLine2, matrixLine3, matrixLine4} = useContext(TransitionContext)
 
-    const firstLine = "jfhgksjlvsjdklejf583648dchjf   ldkrls^% w"
-    const secondLine = "jfhgksjlvsjdklejfw vsdrg的v发生的饭"
-    const thirdLine = "jfhgksjlvsjdklejfw lvsjdklejfw vsdrg的v发生的饭"
-    const fourthLine = "jfhgksjlvsjdklejfw lvsjdklejfw vsdrg的v发生的饭"
+    const firstLine = "см  иренный в вдохновении"
+    const secondLine =   "美丽易碎的世界，凡有等待，就有启程ё"
+    const thirdLine = "Рыбы в море поступают как люди на земле: большие поедают малых."
+    const fourthLine = "Океан переплывет тот, кто не боится потерять из виду берег"
 
 
 

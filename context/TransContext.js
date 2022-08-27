@@ -83,10 +83,10 @@ export const TransContext = ({children}) => {
          gsap.set(matrixLine3('.matrix-letter '), {margin: "-20px"})
          gsap.set(matrixLine4('.matrix-letter '), {margin: "-20px"})
 
-         gsap.fromTo(matrixLine1('.matrix-letter'), {margin: "-20px",x:'-10%'}, {margin: "0px",x:'10%', duration:1.1  })
-         gsap.fromTo(matrixLine2('.matrix-letter'), {margin: "-20px"}, {margin: "-1px", duration:1.7  })
+         gsap.fromTo(matrixLine1('.matrix-letter'), {margin: "-20px",x:'-10%'}, {margin: "-1px",x:'10%', duration:1.1  })
+         gsap.fromTo(matrixLine2('.matrix-letter'), {margin: "-20px"}, {margin: "-2px", duration:1.7  })
          gsap.fromTo(matrixLine3('.matrix-letter'),{margin: "-20px"}, {margin: "-2px", duration:1.5, })
-         gsap.fromTo(matrixLine4('.matrix-letter'),{margin: "-20px"}, {margin: "-1px", duration:.9})
+         gsap.fromTo(matrixLine4('.matrix-letter'),{margin: "-20px"}, {margin: "-2px", duration:.9})
 
            gsap.fromTo(matrixLine1(".matrix-letter"), {y:0, x:0,opacity:0}, {y:-2,x:-4,opacity:1, stagger: .1,repeat:-1, duration: .7, delay:.3} )
            gsap.fromTo(matrixLine2(".matrix-letter"), {y:0,x: 0, opacity:0}, {y:3, x:-2,stagger: .1,opacity:1, repeat:-1,duration: 1.1, delay:.3})
