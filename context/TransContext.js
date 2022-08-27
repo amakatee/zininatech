@@ -115,8 +115,8 @@ export const TransContext = ({children}) => {
             }
 
           })
-          tlSecond.fromTo(secondTitleRef.current , {y:'100%',  }  , {y:0,opacity:1})
-          tlSecond.fromTo(secTitle('.second-title-letter'), {y:'0', x:'0%'}, {y:'100%', x:'30%', stagger:.1, ease:slowMo})
+          // tlSecond.fromTo(secondTitleRef.current , {y:'100%',  }  , {y:0,opacity:1})
+          // tlSecond.fromTo(secTitle('.second-title-letter'), {y:'0', x:'0%'}, {y:'100%', x:'30%', stagger:.1, ease:slowMo})
           tlSecond.fromTo(secTopRef1.current, {y:'8%', opacity:0, transform:'scale(0.9)'}, {y:'0%', opacity:1,transform:'scale(1)', delay: .1})
           tlSecond.fromTo(secTopRef2.current, {y:'8%', opacity:0, transform:'scale(0.9)'}, {y:'0%', opacity:1,transform:'scale(1)', delay: .1})
           tlSecond.fromTo(secTopRef3.current, {y:'8%', opacity:0, transform:'scale(0.9)'}, {y:'0%', opacity:1,transform:'scale(1)', delay: .1})
