@@ -14,7 +14,9 @@ const TransitionContext = createContext()
 export const TransContext = ({children}) => {
 
     const { ref: firstPageRef, inView:firstPageVis, entry } = useInView();
-    const { ref: secondPageRef, inView:seconPageVid, entry:entrySecond } = useInView();
+    const { ref: secondPageRef, inView:seconPageVis, entry:entrySecond } = useInView();
+    
+ 
     const dashBoardRef = useRef()
   /*Navbar */
     const logoRef = useRef()
@@ -35,6 +37,28 @@ export const TransContext = ({children}) => {
   const matrixLine4 = gsap.utils.selector(matrixRef4)
   /*Matrix Ends*/ 
 
+  /* Second Page Tilte  */
+  const secondTitleLine = "Akakka"
+  const secondTitleRef = useRef()
+  const secTitle = gsap.utils.selector(secondTitleRef)
+  /* Second page title ends  */
+    
+
+   useLayoutEffect(() => {
+        gsap.set(logoLetter(".symbol-letter "), { display:"block"} )
+        // gsap.fromTo(logoLetter(".symbol-letter "),{margin:"-10px"}, {margin: "-7px", duration:.5, transition:".7s ease"} )
+        // gsap.fromTo(logoRef.current,  {y:0, x:0, }, {y:2, x:4, stagger:.1} )
+
+         gsap.fromTo(logoLetter(".symbol-letter "), {y:0, x:0}, {y:3, x:3, stagger:.1,opacity:1, transition:'1s ease'} )
+
+        // gsap.fromTo(navItemRef.current, {x: -100, opacity:0} , {x:0, opacity:1, duration:.5, transition:'1s ease'})
+
+
+
+
+              
+
+    },[])
   
 
     useLayoutEffect(() => {
@@ -68,13 +92,27 @@ export const TransContext = ({children}) => {
     
       }, [firstPageVis])
 
-      useLayoutEffect(() => 
-      {
-        gsap.fromTo(navItemRef.current, {x: "-100%", opacity:0} , {x:0, opacity:1, duration:.5, transition:'1s easeInOut', delay:.2})
+  
+      useLayoutEffect(() => {
+        if(seconPageVis){
+          const tlSecond = gsap.timeline({
+            trigger:entrySecond.target,
+            start:'5%',
+            end: '20%',
+            scrub:true,
+
+
+          })
+          tlSecond.fromTo(secTitle('.second-title-letter') , {y:-100}  , {y:0})
+          console.log(secTitle('.second-title-letter'))
+        }
+      
+
+      }, [seconPageVis])
 
 
 
-      }, [])
+      // }, [])
    useLayoutEffect(() => {
 
     /* Matrix */
@@ -147,7 +185,8 @@ export const TransContext = ({children}) => {
             matrixLine2, 
             matrixLine3, 
             matrixLine4,
-            dashBoardRef
+            dashBoardRef,
+            secondTitleLine
         }}
         >
             {children}

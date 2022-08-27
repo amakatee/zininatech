@@ -1,19 +1,24 @@
-import React from 'react'
+import React, {useContext} from 'react'
+import TransitionContext from '../../context/TransContext'
 
 const SecondSection = () => {
+  const {secondTitleLine, seconPageRef, secondTitleRef} = useContext(TransitionContext)
+ 
   return (
     
-    <div className='second-section'>
+    <div ref={seconPageRef} className='second-section'>
       <div className='column'>
       <div className='second-cont'>
-        <h1 className='second-title'>Инфо</h1>
+        <h1 ref={secondTitleRef} className='second-title'>{secondTitleLine.split("").map(t => (
+          <span className='second-title-letter'>{t}</span>
+        ))}</h1>
         <div className='topic-cont'>
         <h3 className='topic-title'><span className='topic-span'> 01</span> Стек</h3>
-        <p className='topic-desc'>Фронт: HTML, CSS, SASS, NEXT js / React <br/> Бэк: Node js, Express <br/> Дизайн: Ваш готовый макет в Фигме, Фотошопе или идея(пример). В ином случае можно довериться моему вдохновению ¯\_(ツ)_/¯ </p>
+        <p className='topic-desc'> <span className='mar-span-20'>Фронт:  </span>HTML, CSS, SASS, NEXT js / React <br/> <span className='mar-span-20'>Бэк:  </span> Node js, Express  <br/> <span className='mar-span-20'>Дизайн: </span> Ваш готовый макет в Фигме, Фотошопе или идея(пример). В ином случае можно довериться моему вдохновению ¯\_(ツ)_/¯ </p>
         </div>
         <div className='topic-cont'>
         <h3 className='topic-title'><span className='topic-span'> 02</span> Процесс </h3>
-        <p className='topic-desc'> По итогу вы получите сайт под ключ, готовый к SEO оптимизации с личным кабинетом и всеми необходимыми фичами. </p>
+        <p className='topic-desc'>  По итогу вы получите сайт под ключ, готовый к SEO оптимизации с личным кабинетом и всеми необходимыми фичами. </p>
         </div>
         <div className='topic-cont'>
         <h3 className='topic-title'><span className='topic-span'> 03</span> Цены и сроки</h3>
