@@ -2,15 +2,16 @@ import React, {useContext} from 'react'
 import TransitionContext from '../../context/TransContext'
 
 const SecondSection = () => {
-  const {secondTitleLine, seconPageRef, secondTitleRef} = useContext(TransitionContext)
+  const { seconPageRef, secondTitleRef} = useContext(TransitionContext)
+  const secondTitleLine = "Akakka"
  
   return (
     
     <div ref={seconPageRef} className='second-section'>
       <div className='column'>
       <div className='second-cont'>
-        <h1 ref={secondTitleRef} className='second-title'>{secondTitleLine.split("").map(t => (
-          <span className='second-title-letter'>{t}</span>
+        <h1 ref={secondTitleRef} className='second-title'>{secondTitleLine.split("").map((t, index) => (
+          <span key={index} className='second-title-letter'>{t}</span>
         ))}</h1>
         <div className='topic-cont'>
         <h3 className='topic-title'><span className='topic-span'> 01</span> Стек</h3>

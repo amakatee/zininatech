@@ -38,10 +38,13 @@ export const TransContext = ({children}) => {
   /*Matrix Ends*/ 
 
   /* Second Page Tilte  */
-  const secondTitleLine = "Akakka"
+
   const secondTitleRef = useRef()
   const secTitle = gsap.utils.selector(secondTitleRef)
   /* Second page title ends  */
+
+
+
     
 
    useLayoutEffect(() => {
@@ -97,8 +100,8 @@ export const TransContext = ({children}) => {
         if(seconPageVis){
           const tlSecond = gsap.timeline({
             trigger:entrySecond.target,
-            start:'5%',
-            end: '20%',
+            start:'0%',
+            end: '1000%',
             scrub:true,
 
 
@@ -186,7 +189,8 @@ export const TransContext = ({children}) => {
             matrixLine3, 
             matrixLine4,
             dashBoardRef,
-            secondTitleLine
+            secondTitleRef
+   
         }}
         >
             {children}
