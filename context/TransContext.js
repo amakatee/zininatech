@@ -2,9 +2,16 @@ import {createContext, useRef, useEffect, useState} from "react"
 import gsap from "gsap";
 import {Power3, slowMo} from 'gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-gsap.registerPlugin(ScrollTrigger)
+
 import { useLayoutEffect } from 'react';
 import { useInView } from 'react-intersection-observer'
+
+// import { Draggable } from "gsap/Draggable";
+gsap.registerPlugin(ScrollTrigger)
+
+
+
+
 
 
 
@@ -16,8 +23,13 @@ export const TransContext = ({children}) => {
     const { ref: firstPageRef, inView:firstPageVis, entry } = useInView();
     const { ref: secondPageRef, inView:seconPageVis, entry:entrySecond } = useInView();
     
- 
+    const ztRef = useRef()
+    const zt = gsap.utils.selector(ztRef)
     const dashBoardRef = useRef()
+    const ztContRef = useRef()
+    const ztCont = gsap.utils.selector(ztContRef)
+    const ztItemRef = useRef()
+    const ztItem1Ref = useRef()
   /*Navbar */
     const logoRef = useRef()
     const logoLetter = gsap.utils.selector(logoRef)
@@ -45,10 +57,16 @@ export const TransContext = ({children}) => {
   const secTopRef2 = useRef()
   const secTopRef3  = useRef()
   /* Second page title ends  */
-  console.log(seconPageVis)
+
+  const imgRef = useRef()
 
 
+  //  useLayoutEffect(() => { 
+  //   Draggable.create(imgRef.current, {
+  //     type: 'x'
+  //   })
 
+  //  }, [])
     
 
    useLayoutEffect(() => {
@@ -56,10 +74,10 @@ export const TransContext = ({children}) => {
         // gsap.fromTo(logoLetter(".symbol-letter "),{margin:"-10px"}, {margin: "-7px", duration:.5, transition:".7s ease"} )
         // gsap.fromTo(logoRef.current,  {y:0, x:0, }, {y:2, x:4, stagger:.1} )
 
-         gsap.fromTo(logoLetter(".symbol-letter "), {y:0, x:0}, {y:3, x:3, stagger:.1,opacity:1, transition:'1s ease'} )
+         gsap.fromTo(logoLetter(".symbol-letter "), {y:0, x:0}, {y:3, x:7, stagger:.1,opacity:1, transition:'1s ease'} )
 
         // gsap.fromTo(navItemRef.current, {x: -100, opacity:0} , {x:0, opacity:1, duration:.5, transition:'1s ease'})
-
+         
 
 
 
@@ -132,6 +150,22 @@ export const TransContext = ({children}) => {
 
 
       // }, [])
+
+      useLayoutEffect(() => {
+        // gsap.set(ztItemRef.current, {y:'-30%', x:'-40%'})
+        
+        gsap.to(ztItemRef.current, {y:'10%', x:'30%', delay:.3, duration:2})
+        gsap.fromTo(zt('.zt-span'),{ margin: '-5px',y:0,x:0,}, {y:-1,x:-2,margin:"2px", stagger: .1})
+        gsap.to(ztItem1Ref.current, {y:'50%', x:'-20%', delay:.3, duration:2})
+        
+   
+
+        gsap.fromTo(ztCont('.zt-span'),{margin: '-5px',y:0,x:0,}, {y:-1,x:-2,margin:"2px", stagger: .1})
+
+
+
+
+      },[])
    useLayoutEffect(() => {
 
     /* Matrix */
@@ -209,7 +243,12 @@ export const TransContext = ({children}) => {
             secondPageRef,
             secTopRef1,
             secTopRef2, 
-            secTopRef3
+            secTopRef3,
+            imgRef,
+            ztRef,
+            ztContRef,
+            ztItemRef,
+            ztItem1Ref
    
         }}
         >

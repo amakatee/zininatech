@@ -4,14 +4,14 @@ import TransitionContext from '../context/TransContext'
 
 
 const Navbar = () => {
-    const { logoRef, LogoLetter, logoText, navItemRef, navItemRef2, navItemRef3} = useContext(TransitionContext)
+    const { logoRef,ztRef, LogoLetter, logoText, navItemRef, navItemRef2, navItemRef3} = useContext(TransitionContext)
     // const logoRef = useRef()
     // const logoLetter = gsap.utils.selector(logoRef)
     // const logoText = 'zininatech'
     // const navItemRef = useRef()
     // const navItemRef2 = useRef()
     // const navItemRef3 = useRef()
-
+    const ztLogo = "zininatech"
  
   
 
@@ -31,6 +31,7 @@ const Navbar = () => {
 
     // },[])
   return (
+    <>
     <div className='navbar'>
         <h1 ref={logoRef} className='nav-logo'>{logoText.split(""). map((letter, i) => (
             <span key={i} className="symbol-letter">{letter}</span>
@@ -43,6 +44,10 @@ const Navbar = () => {
         <p className='nav-desc'>Итерация свойственна человеку, рекурсия божественна. <br />
              <span >— L.P. Deutsch</span> </p>
     </div>
+     <div><h1 ref={ztRef} className='zt-logo'>{ztLogo.split("").map((letter, i) => (
+       <span className='zt-span' key={i}>{letter}</span>
+     ))}</h1></div>
+     </>
   )
 }
 

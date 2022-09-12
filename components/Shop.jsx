@@ -1,13 +1,15 @@
-import React, {useState, useRef, useEffect} from 'react'
+import React, {useState, useRef, useEffect, useContext} from 'react'
 import DashboardLayout from './DashboardLayout'
 import gsap from 'gsap'
+import TransitionContext from '../context/TransContext'
 
 const Shop = () => {
+  const {imgRef} = useContext(TransitionContext)
 
   const [shoppingCart, setShoppingCart] = useState([])
   const [cartActive, setCartActive] = useState(false)
   const [quant, setQuant] = useState(1)
-  const imgRef = useRef()
+
 
   const shoppingCartRef = useRef()
 

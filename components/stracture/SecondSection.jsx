@@ -13,6 +13,7 @@ const SecondSection = () => {
         <h1 ref={secondTitleRef} className='second-title'>{secondTitleLine.split("").map((t, index) => (
           <span key={index} className='second-title-letter'>{t}</span>
         ))}</h1>
+        <div className='conts'>
         <div ref={secTopRef1} className='topic-cont'>
         <h3 className='topic-title'><span className='topic-span'> 01</span> Стек</h3>
         <p className='topic-desc'> <span className='mar-span-20'>Фронт:  </span>HTML, CSS, SASS, NEXT js / React <br/> <span className='mar-span-20'>Бэк:  </span> Node js, Express  <br/> <span className='mar-span-20'>Дизайн: </span> Ваш готовый макет в Фигме, Фотошопе или идея(пример). В ином случае можно довериться моему вдохновению ¯\_(ツ)_/¯ </p>
@@ -24,6 +25,7 @@ const SecondSection = () => {
         <div ref={secTopRef3} className='topic-cont'>
         <h3 className='topic-title'><span className='topic-span'> 03</span> Цены и сроки</h3>
         <p className='topic-desc'> В среднем сроки от 2 недель до 2х месяцев. За всем процессом можно будет наблюдать в процессе разработки. Цена начинается с 15к зависит от продукта и необходимости привлекать человека с аутсорса.</p>
+        </div>
         </div>
         </div>
         {/* <div className='contact-video'>
