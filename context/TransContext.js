@@ -102,8 +102,8 @@ export const TransContext = ({children}) => {
 
               scrub:true,
               end: '100%',
-              // pin:true,
-              // pinSpacing: false,
+               pin:true,
+               pinSpacing: false,
     
             }
           })
