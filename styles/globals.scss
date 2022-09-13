@@ -12,6 +12,10 @@ html {
  
 }
 
+body {
+  background-color: rgb(29, 25, 25);
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -73,13 +77,18 @@ a {
  
   .zt-span{
     margin-inline: -3px;
-    color: rgb(255, 255, 255);
+    color: rgb(252, 252, 252);
     font-size: 1rem;
     font-weight: 200;
     text-transform:none;
     transition: .3s ease-in-out;
     pointer-events: none;
    font-weight: 300;
+   border-bottom: 1px solid rgba(8, 247, 79, 0.26);
+   border-right: 1px solid rgba(8, 247, 79, 0.26);
+   border-bottom-right-radius: 10px;
+
+
     // text-shadow: 0 0 5px rgb(0, 110, 255), 
     // 0 0 18px rgba(4, 255, 201, 0.212),
     // 0 1px 14px rgb(48, 255, 21), 
@@ -99,6 +108,10 @@ a {
   overflow: hidden;
   transition:2s ease-in-out;
 
+  border-bottom: 1px solid rgba(8, 247, 79, 0.26);
+  
+   border-bottom-right-radius: 10px;
+
 
   
 
@@ -111,6 +124,7 @@ a {
     text-transform:none;
     
     transition: 2s ease-in-out;
+    
     // text-shadow:  
 
     // 0 1px 19px rgb(12, 198, 255), 
