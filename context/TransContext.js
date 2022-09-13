@@ -108,7 +108,7 @@ export const TransContext = ({children}) => {
             }
           })
           console.log(dashBoardRef.current)
-          tlMain.fromTo(dashBoardRef.current,{y:0}, {y:'-30%',transition:'7s easeInOut' ,ease:slowMo})
+          tlMain.fromTo(dashBoardRef.current,{y:0}, {y:'-20%',transition:'7s easeInOut' , ease: slowMo})
 }
 
        
@@ -164,48 +164,48 @@ export const TransContext = ({children}) => {
         
    
 
-        gsap.fromTo(ztCont('.zt-span'),{margin: '-5px',y:0,x:0,}, {y:-1,x:-2,margin:"1.8px", stagger: .1})
+        gsap.fromTo(ztCont('.zt-span'),{margin: '-5px',y:0,x:0,}, {y:-1,x:-2,margin:"1.2px", stagger: .1})
         gsap.to(ztItem2Ref.current, {y:'135%', x:'-20%', delay:.3, duration:2})
 
-        gsap.fromTo(ztCont2('.zt-span'),{margin: '-5px',y:0,x:0,}, {y:-1,x:-2,margin:"1.8px", stagger: .1})
+        gsap.fromTo(ztCont2('.zt-span'),{margin: '-5px',y:0,x:0,}, {y:-1,x:-2,margin:"1.2px", stagger: .1})
         
         gsap.to(ztItem3Ref.current, {y:'190%', x:'-20%', delay:.3, duration:2})
-        gsap.fromTo(ztCont3('.zt-span'),{margin: '-5px',y:0,x:0,}, {y:-1,x:-2,margin:"1.8px", stagger: .1})
+        gsap.fromTo(ztCont3('.zt-span'),{margin: '-5px',y:0,x:0,}, {y:-1,x:-2,margin:"1.2px", stagger: .1})
 
 
 
 
 
       },[])
-   useLayoutEffect(() => {
+  //  useLayoutEffect(() => {
 
-    /* Matrix */
-         gsap.set(matrixLine1(".matrix-letter "), {x:'-10%', margin: "-20px"})
-         gsap.set(matrixLine2('.matrix-letter '), {margin: "-20px"})
-         gsap.set(matrixLine3('.matrix-letter '), {margin: "-20px"})
-         gsap.set(matrixLine4('.matrix-letter '), {margin: "-20px"})
+  //   /* Matrix */
+  //        gsap.set(matrixLine1(".matrix-letter "), {x:'-10%', margin: "-20px"})
+  //        gsap.set(matrixLine2('.matrix-letter '), {margin: "-20px"})
+  //        gsap.set(matrixLine3('.matrix-letter '), {margin: "-20px"})
+  //        gsap.set(matrixLine4('.matrix-letter '), {margin: "-20px"})
 
-         gsap.fromTo(matrixLine1('.matrix-letter'), {margin: "-20px",x:'-10%'}, {margin: "-1px",x:'10%', duration:1.1  })
-         gsap.fromTo(matrixLine2('.matrix-letter'), {margin: "-20px"}, {margin: "-2px", duration:1.7  })
-         gsap.fromTo(matrixLine3('.matrix-letter'),{margin: "-20px"}, {margin: "-2px", duration:1.5, })
-         gsap.fromTo(matrixLine4('.matrix-letter'),{margin: "-20px"}, {margin: "-2px", duration:.9})
+  //        gsap.fromTo(matrixLine1('.matrix-letter'), {margin: "-20px",x:'-10%'}, {margin: "-1px",x:'10%', duration:1.1  })
+  //        gsap.fromTo(matrixLine2('.matrix-letter'), {margin: "-20px"}, {margin: "-2px", duration:1.7  })
+  //        gsap.fromTo(matrixLine3('.matrix-letter'),{margin: "-20px"}, {margin: "-2px", duration:1.5, })
+  //        gsap.fromTo(matrixLine4('.matrix-letter'),{margin: "-20px"}, {margin: "-2px", duration:.9})
 
-           gsap.fromTo(matrixLine1(".matrix-letter"), {y:0, x:0,opacity:0}, {y:-2,x:-4,opacity:1, stagger: .1,repeat:-1, duration: .7, delay:.3} )
-           gsap.fromTo(matrixLine2(".matrix-letter"), {y:0,x: 0, opacity:0}, {y:3, x:-2,stagger: .1,opacity:1, repeat:-1,duration: 1.1, delay:.3})
-         gsap.fromTo(matrixLine3(".matrix-letter "), {y:0, x:0, opacity:0}, {y:-1,x:-1,opacity:1, stagger: .1,repeat:-1, duration: 1.1 ,delay:.3})
-        gsap.fromTo(matrixLine4(".matrix-letter"), {y:-3, x:-3,opacity:0}, {y:-1,x:4,opacity:1, stagger: .1,repeat:-1, duration: .01, delay:.3})
-
-
-        //  gsap.fromTo(matrixLine1(".matrix-letter"), {y:'0%', x:'0%',opacity:0}, {y:'-2%',x:'-4%',opacity:1, stagger: .1,repeat:-1, duration: 1} )
-        //  gsap.fromTo(matrixLine2(".matrix-letter"), {y:'0%',x: '0%', opacity:0}, {y:'3%', x:'-2%',stagger: .1,opacity:1, repeat:-1,duration: .7})
-        //  gsap.fromTo(matrixLine3(".matrix-letter "), {y:'0%', x:'0%', opacity:0}, {y:'-1%',x:'-1%',opacity:1, stagger: .1,repeat:-1, duration: .4})
-        //  gsap.fromTo(matrixLine4(".matrix-letter"), {y:'-3%', x:'-3%',opacity:0}, {y:'-1%',x:'4%',opacity:1, stagger: .1,repeat:-1, duration: .91})
+  //          gsap.fromTo(matrixLine1(".matrix-letter"), {y:0, x:0,opacity:0}, {y:-2,x:-4,opacity:1, stagger: .1,repeat:-1, duration: .7, delay:.3} )
+  //          gsap.fromTo(matrixLine2(".matrix-letter"), {y:0,x: 0, opacity:0}, {y:3, x:-2,stagger: .1,opacity:1, repeat:-1,duration: 1.1, delay:.3})
+  //        gsap.fromTo(matrixLine3(".matrix-letter "), {y:0, x:0, opacity:0}, {y:-1,x:-1,opacity:1, stagger: .1,repeat:-1, duration: 1.1 ,delay:.3})
+  //       gsap.fromTo(matrixLine4(".matrix-letter"), {y:-3, x:-3,opacity:0}, {y:-1,x:4,opacity:1, stagger: .1,repeat:-1, duration: .01, delay:.3})
 
 
+  //       //  gsap.fromTo(matrixLine1(".matrix-letter"), {y:'0%', x:'0%',opacity:0}, {y:'-2%',x:'-4%',opacity:1, stagger: .1,repeat:-1, duration: 1} )
+  //       //  gsap.fromTo(matrixLine2(".matrix-letter"), {y:'0%',x: '0%', opacity:0}, {y:'3%', x:'-2%',stagger: .1,opacity:1, repeat:-1,duration: .7})
+  //       //  gsap.fromTo(matrixLine3(".matrix-letter "), {y:'0%', x:'0%', opacity:0}, {y:'-1%',x:'-1%',opacity:1, stagger: .1,repeat:-1, duration: .4})
+  //       //  gsap.fromTo(matrixLine4(".matrix-letter"), {y:'-3%', x:'-3%',opacity:0}, {y:'-1%',x:'4%',opacity:1, stagger: .1,repeat:-1, duration: .91})
 
-    /* Matrix End */
 
-    }, [])
+
+  //   /* Matrix End */
+
+  //   }, [])
     
 
     // useLayoutEffect(() => {

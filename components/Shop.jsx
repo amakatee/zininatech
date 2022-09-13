@@ -16,9 +16,9 @@ const Shop = () => {
   useEffect(() => {
     
     gsap.fromTo(shoppingCartRef.current, {y:-100} , {y: 0})
-    gsap.set(imgRef.current, {y:-10, x: 10})
+    gsap.set(imgRef.current, {y:-10, x: 10, opacity:0})
    
-    gsap.fromTo(imgRef.current, { y:-10, x: 10,  transform: 'scale(1)'} , {y:30, x:-10,transition:'2s ease', transform: 'scale(1.5)', delay :.5, })
+    gsap.fromTo(imgRef.current, { y:-10, x: 10,  transform: 'scale(1)'} , {y:20, x:-10,transition:'2s ease', opacity:1,transform: 'scale(1.5)', delay :.5, })
 
   }, [])
 
