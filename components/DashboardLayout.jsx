@@ -57,6 +57,10 @@ const DashboardLayout = ({children}) => {
 
   
   return (
+    <div className='dash-area'>
+      <div className='dash-img'>
+        <img width={300} src='/assets/screen.png'></img>
+      </div>
     <div ref={dashBoardRef} className='dashboard'>
         <div className='dash-nav'>
         
@@ -70,6 +74,7 @@ const DashboardLayout = ({children}) => {
           {currentDash(status)}
             
         </div>
+    </div>
     </div>
   )
 }

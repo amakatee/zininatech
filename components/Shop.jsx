@@ -51,14 +51,11 @@ const Shop = () => {
       </div>
       {books.map(b => (
         <div key={b.id}>
-         <div className='shop-main'>
-        
-         <p className='shop-title'>{b.name}</p>
-        
+         <div className='shop-main'> 
+          <p className='shop-title'>{b.name}</p>
           <div className='shop-img'>
-            <img ref={imgRef} src='assets/rose.png' alt=""></img>
+           <img ref={imgRef} src='assets/rose.png' alt=""></img>
           </div>
-  
         </div>
         <div className='shop-desc'>
           <p className='shop-price'>{b.price} ₽</p>
