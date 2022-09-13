@@ -4,7 +4,7 @@ import Matrix from '../Matrix'
 import DashboardLayout from '../DashboardLayout'
 import TransitionContext from '../../context/TransContext'
 import Navigation from '../Navigation'
-
+import Form from '../Form'
 
 const FirstSection = () => {
   const {firstPageRef,ztRef} = useContext(TransitionContext)
@@ -13,6 +13,7 @@ const FirstSection = () => {
     <>
     <section ref={firstPageRef}  className='main'>
       <Navigation />
+      <Form />
    
       {/* <Navbar /> */}
      
