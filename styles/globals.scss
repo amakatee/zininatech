@@ -45,24 +45,24 @@ a {
 
  
   .zt-span{
-    margin: -5px;
-    color: rgb(255, 255, 255);
+    margin: -3px;
+    color: rgb(0, 0, 0);
     font-size: 1rem;
     font-weight: 200;
     text-transform:none;
     transition: 2s ease-in-out;
-    text-shadow: 0 0 5px rgb(0, 110, 255), 
-    0 0 18px rgba(4, 255, 201, 0.212),
-    0 1px 14px rgb(48, 255, 21), 
-    0 1px 12px rgb(31, 238, 3), 
-    0 1px 10px rgb(28, 40, 107),
+    // text-shadow: 0 0 5px rgb(0, 110, 255), 
+    // 0 0 18px rgba(4, 255, 201, 0.212),
+    // 0 1px 14px rgb(48, 255, 21), 
+    // 0 1px 12px rgb(31, 238, 3), 
+    // 0 1px 10px rgb(28, 40, 107),
   }
 
 }
 .zt-logo {
 
   overflow: hidden;
-  padding: 1rem;
+  padding: .8rem;
   padding-inline: 4rem;
   overflow: hidden;
   transition:2s ease-in-out;
@@ -73,17 +73,17 @@ a {
   .zt-span{
     margin: -5px;
     display: inline-block;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-size: .9rem;
     font-weight: 200;
     text-transform:none;
     
     transition: 2s ease-in-out;
-    text-shadow: 0 0 5px rgb(0, 110, 255), 
-    0 0 18px rgba(4, 255, 201, 0.212),
-    0 1px 14px rgb(48, 255, 21), 
-    0 1px 12px rgb(31, 238, 3), 
-    0 1px 10px rgb(28, 40, 107),
+    // text-shadow: 0 0 5px rgb(0, 110, 255), 
+    // 0 0 18px rgba(4, 255, 201, 0.212),
+    // 0 1px 14px rgb(48, 255, 21), 
+    // 0 1px 12px rgb(31, 238, 3), 
+    // 0 1px 10px rgb(28, 40, 107),
   }
 
 }
@@ -112,13 +112,15 @@ a {
   background-color: $mainblue;
   overflow: hidden;
   z-index: 1;
-    background-image: linear-gradient(155deg, #09203F 0%, #537895 150%);
+
+   
+ //  background-image: linear-gradient(155deg, #09203F 0%, #537895 150%);
 
  
 
   
   
-  //background-color: black;
+  background-color: white;
   
  
 

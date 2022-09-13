@@ -30,6 +30,12 @@ export const TransContext = ({children}) => {
     const ztCont = gsap.utils.selector(ztContRef)
     const ztItemRef = useRef()
     const ztItem1Ref = useRef()
+    const ztItem2Ref = useRef()
+    const ztContRef2 = useRef()
+    const ztCont2 = gsap.utils.selector(ztItem2Ref)
+    const  ztItem3Ref = useRef()
+    const  ztContRef3 = useRef()
+    const ztCont3 = gsap.utils.selector( ztContRef3)
   /*Navbar */
     const logoRef = useRef()
     const logoLetter = gsap.utils.selector(logoRef)
@@ -155,12 +161,20 @@ export const TransContext = ({children}) => {
         // gsap.set(ztItemRef.current, {y:'-30%', x:'-40%'})
         
         gsap.to(ztItemRef.current, {y:'10%', x:'30%', delay:.3, duration:2})
-        gsap.fromTo(zt('.zt-span'),{ margin: '-5px',y:0,x:0,}, {y:-1,x:-2,margin:"2px", stagger: .1})
+        gsap.fromTo(zt('.zt-span'),{ margin: '-4px',y:0,x:0,}, {y:-1,x:-2,margin:"2px", stagger: .1})
         gsap.to(ztItem1Ref.current, {y:'50%', x:'-20%', delay:.3, duration:2})
+        
         
    
 
-        gsap.fromTo(ztCont('.zt-span'),{margin: '-5px',y:0,x:0,}, {y:-1,x:-2,margin:"2px", stagger: .1})
+        gsap.fromTo(ztCont('.zt-span'),{margin: '-5px',y:0,x:0,}, {y:-1,x:-2,margin:"1.8px", stagger: .1})
+        gsap.to(ztItem2Ref.current, {y:'80%', x:'-20%', delay:.3, duration:2})
+
+        gsap.fromTo(ztCont2('.zt-span'),{margin: '-5px',y:0,x:0,}, {y:-1,x:-2,margin:"1.8px", stagger: .1})
+        
+        gsap.to(ztItem3Ref.current, {y:'110%', x:'-20%', delay:.3, duration:2})
+        gsap.fromTo(ztCont3('.zt-span'),{margin: '-5px',y:0,x:0,}, {y:-1,x:-2,margin:"1.8px", stagger: .1})
+
 
 
 
@@ -248,7 +262,10 @@ export const TransContext = ({children}) => {
             ztRef,
             ztContRef,
             ztItemRef,
-            ztItem1Ref
+            ztItem1Ref,
+            ztItem2Ref,
+            ztItem3Ref,
+            ztContRef3
    
         }}
         >
