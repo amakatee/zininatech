@@ -162,17 +162,17 @@ export const TransContext = ({children}) => {
         
         gsap.to(ztItemRef.current, {y:'10%', x:'30%', delay:.3, duration:2})
         gsap.fromTo(zt('.zt-span'),{ margin: '-4px',y:0,x:0,}, {y:-1,x:-2,margin:"2px", stagger: .1})
-        gsap.to(ztItem1Ref.current, {y:'50%', x:'-20%', delay:.3, duration:2})
+        gsap.to(ztItem1Ref.current, {y:'80%', x:'-20%', delay:.3, duration:2})
         
         
    
 
         gsap.fromTo(ztCont('.zt-span'),{margin: '-5px',y:0,x:0,}, {y:-1,x:-2,margin:"1.8px", stagger: .1})
-        gsap.to(ztItem2Ref.current, {y:'80%', x:'-20%', delay:.3, duration:2})
+        gsap.to(ztItem2Ref.current, {y:'140%', x:'-20%', delay:.3, duration:2})
 
         gsap.fromTo(ztCont2('.zt-span'),{margin: '-5px',y:0,x:0,}, {y:-1,x:-2,margin:"1.8px", stagger: .1})
         
-        gsap.to(ztItem3Ref.current, {y:'110%', x:'-20%', delay:.3, duration:2})
+        gsap.to(ztItem3Ref.current, {y:'200%', x:'-20%', delay:.3, duration:2})
         gsap.fromTo(ztCont3('.zt-span'),{margin: '-5px',y:0,x:0,}, {y:-1,x:-2,margin:"1.8px", stagger: .1})
 
 

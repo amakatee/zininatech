@@ -34,29 +34,55 @@ a {
   top: 0%;
   left: 50%;
   transform: translate((-50%));
+
+  
+
+ :hover {
+
+
+  .zt-span {
+    color: #ff7f50;
+   
+   
+
+  }
+  
+  }
+
 }
 .zt-items {
+  
+
  
 
 }
 .zt-contact {
-  padding: 1rem;
+ 
+  padding: .1rem;
+
   padding-inline: 4rem;
+  cursor: pointer;
+
 
  
   .zt-span{
-    margin: -3px;
+    margin-inline: -3px;
     color: rgb(0, 0, 0);
     font-size: 1rem;
     font-weight: 200;
     text-transform:none;
-    transition: 2s ease-in-out;
+    transition: .3s ease-in-out;
+    pointer-events: none;
+   
     // text-shadow: 0 0 5px rgb(0, 110, 255), 
     // 0 0 18px rgba(4, 255, 201, 0.212),
     // 0 1px 14px rgb(48, 255, 21), 
     // 0 1px 12px rgb(31, 238, 3), 
     // 0 1px 10px rgb(28, 40, 107),
+  
+   
   }
+ 
 
 }
 .zt-logo {
