@@ -383,7 +383,7 @@ transform: scale(.85);
 
   // }
   .dash-content {
-   background-color: #1b2845d2;
+   //background-color: #1b2845d2;
 
 
    border-radius: 20px;
@@ -435,7 +435,7 @@ transform: scale(.85);
 
 /* shop page start */
 .shopPage {
-  background-color: rgb(255, 255, 255);
+  background-color:transparent ;
   border-right: 1px solid #1b28454b;
   border-left: 1px solid #1b284523;
   width: 100%;
@@ -466,7 +466,7 @@ transform: scale(.85);
     .small-text {
       font-size: .6rem;
       font-weight: 400;
-      color: #1b2845;
+      color: #fdfdfd;
     }
   }
   
@@ -490,7 +490,7 @@ transform: scale(.85);
 
       letter-spacing: 2px;
       font-weight: 300;
-      color: #1b2845;
+      color: #fdfdfd;
       
       
       flex: 1;
