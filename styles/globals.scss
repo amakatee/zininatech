@@ -319,7 +319,7 @@ padding: .1rem;
   left: 23vw;
   width: 70vw;
   //height: 60vh;
-
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 transform: scale(.85);
   background-color: #1b28456c;
 
@@ -340,7 +340,7 @@ transform: scale(.85);
   }
   .dash-nav > * {
     color:white;
-    font-size: .4rem;
+    font-size: .3rem;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 350;
@@ -421,7 +421,8 @@ transform: scale(.85);
   height: 100%;
   border-radius: 20px;
   transition: .9s ease;
-  padding-top: 1.5rem;
+  padding-block: 1rem;
+  padding-inline: .3rem;
   display: grid;
   place-content: center;
  
@@ -439,7 +440,7 @@ transform: scale(.85);
     top: 20px;
 
     svg {
-      width: 1rem;
+      width: .9rem;
     }
     .small-text {
       font-size: .6rem;
@@ -459,11 +460,11 @@ transform: scale(.85);
    
     
     .shop-title {
-      width: 1.1rem;
+      width: 1rem;
 
-      font-size: 1rem;
+      font-size: .9rem;
       text-transform: uppercase;
-      margin-top: 9rem;
+      margin-top: 8rem;
  
 
       letter-spacing: 2px;
@@ -495,12 +496,8 @@ transform: scale(.85);
 
 
       img {
-       width: 3rem;
-      
-  
-      
-    
-        object-fit: cover ;
+       width: 2rem;
+       object-fit: cover ;
       }
       
     }

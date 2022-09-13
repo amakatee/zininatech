@@ -102,26 +102,23 @@ export const TransContext = ({children}) => {
 
               scrub:true,
               end: '100%',
-              pin:true,
-              pinSpacing: false,
+              // pin:true,
+              // pinSpacing: false,
     
             }
           })
           console.log(dashBoardRef.current)
           tlMain.fromTo(dashBoardRef.current,{y:0}, {y:'-30%',transition:'7s easeInOut' ,ease:slowMo})
-          
-
-
-       
-      
-       
-
-        }
+}
 
        
     
     
       }, [firstPageVis])
+
+     
+    
+          
 
   
       // useLayoutEffect(() => {
